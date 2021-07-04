@@ -1,0 +1,24 @@
+/*Elements*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* typography*/
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  background-color: rgb(59, 59, 59);
+}
+
+form {
+}
+
+h1 {
+  margin: 0;
+}

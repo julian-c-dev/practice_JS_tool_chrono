@@ -1,0 +1,36 @@
+.chrono {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  width: auto;
+  text-align: center;
+  background-color: #233554;
+  background-size: cover;
+  width: 100%;
+  padding: 1rem;
+  font-size: 3rem;
+  margin: 0;
+}
+
+#chronoTime {
+  font-size: 8rem;
+  padding: 1rem;
+  color: rgb(0, 136, 7);
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  margin: 1rem;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
