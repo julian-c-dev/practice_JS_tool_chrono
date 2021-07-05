@@ -13,6 +13,12 @@ html {
 
 body {
   background-color: #3b3b3b;
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+}
+
+form {
+  font-size: 2rem;
 }
 
 h1 {
@@ -354,6 +360,14 @@ template {
   display: none;
 }
 
+#main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .chrono {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,34 +384,122 @@ template {
           align-items: center;
 }
 
-.banner {
-  width: auto;
-  text-align: center;
-  background-color: #233554;
-  background-size: cover;
-  width: 100%;
-  padding: 1rem;
-  font-size: 3rem;
-  margin: 0;
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 #chronoTime {
-  font-size: 8rem;
+  font-size: 10rem;
   padding: 1rem;
   color: #008807;
   text-align: center;
 }
 
 .btn {
-  padding: 1rem 2rem;
-  border-radius: 25px;
-  outline: none;
-  border: none;
   margin: 1rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.btn:hover {
-  background-color: black;
+.banner {
+  width: auto;
+  text-align: center;
+  background-color: rgba(35, 53, 84, 0.8);
+  background-size: cover;
+  width: 100%;
+  padding: 1rem;
+  margin: 0;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.openbtn {
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 6rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.form-switch {
+  font-size: large;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #233554;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=import.css.map */

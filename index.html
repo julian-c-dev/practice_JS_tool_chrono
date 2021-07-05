@@ -4,38 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chronometer</title>
     <link rel="stylesheet" href="/app/css/import.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header class="banner">
-      <h1>Chronotime</h1>
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <h1 class="title">Chronometer</h1>
+      <div class="form-check form-switch">
+        <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="flexSwitchCheckDefault"
+        />
+      </div>
     </header>
-    <div class="chrono">
-      <div id="chronoTime">0:00:00:000</div>
-      <form name="chronoForm">
-        <input
-          class="btn"
-          type="button"
-          name="start"
-          value="start"
-          onClick="chronoStart()"
-        />
-        <input
-          class="btn"
-          type="button"
-          name="stop"
-          value="stop"
-          onClick="chronoStop()"
-        />
-        <input
-          class="btn"
-          type="button"
-          name="reset"
-          value="reset"
-          onClick="chronoReset()"
-        />
-      </form>
+    <div id="main">
+      <div class="chrono">
+        <div id="chronoTime">0:00:00:000</div>
+        <form name="chronoForm">
+          <input
+            class="btn btn-light btn-lg"
+            type="button"
+            name="start"
+            value="Start"
+            onClick="chronoStart()"
+          />
+          <input
+            class="btn btn-light btn-lg"
+            type="button"
+            name="stop"
+            value="Stop"
+            onClick="chronoStop()"
+          />
+          <input
+            class="btn btn-light btn-lg"
+            type="button"
+            name="reset"
+            value="Reset"
+            onClick="chronoReset()"
+          />
+        </form>
+      </div>
+    </div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
     </div>
 
     <script src="/app/js/main.js"></script>

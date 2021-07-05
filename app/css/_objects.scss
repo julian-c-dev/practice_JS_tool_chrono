@@ -1,3 +1,10 @@
+#main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .chrono {
   display: flex;
   flex-flow: column wrap;
@@ -5,32 +12,20 @@
   align-items: center;
 }
 
-.banner {
-  width: auto;
-  text-align: center;
-  background-color: #233554;
-  background-size: cover;
-  width: 100%;
-  padding: 1rem;
-  font-size: 3rem;
-  margin: 0;
+.dark-mode {
+  background-color: black;
+  color: white;
 }
+// Chrono:
 
 #chronoTime {
-  font-size: 8rem;
+  font-size: 10rem;
   padding: 1rem;
   color: rgb(0, 136, 7);
   text-align: center;
 }
 
 .btn {
-  padding: 1rem 2rem;
-  border-radius: 25px;
-  outline: none;
-  border: none;
   margin: 1rem;
-  &:hover {
-    background-color: black;
-    color: white;
-  }
+  font-family: "Courier New", Courier, monospace;
 }

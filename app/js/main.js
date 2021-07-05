@@ -38,13 +38,29 @@ function chronoContinue() {
   chrono();
 }
 function chronoReset() {
-  document.getElementById("chronotime").innerHTML = "0:00:00:000";
+  document.getElementById("chronoTime").innerHTML = "0:00:00:000";
   start = new Date();
 }
 function chronoStopReset() {
-  document.getElementById("chronotime").innerHTML = "0:00:00:000";
+  document.getElementById("chronoTime").innerHTML = "0:00:00:000";
 }
 function chronoStop() {
   document.chronoForm.start.onclick = chronoContinue;
   clearTimeout(timerID);
+}
+
+//Sidebar
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+}
+
+//Dark mode
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }
