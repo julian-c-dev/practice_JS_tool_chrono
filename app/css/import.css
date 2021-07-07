@@ -384,6 +384,20 @@ template {
           align-items: center;
 }
 
+.form-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse wrap;
+          flex-flow: column-reverse wrap;
+}
+
+.form-check-label {
+  font-size: 1.5rem;
+}
+
 .dark-mode {
   background-color: black;
   color: white;

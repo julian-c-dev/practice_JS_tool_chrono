@@ -12,6 +12,14 @@
   align-items: center;
 }
 
+.form-switch {
+  display: flex;
+  flex-flow: column-reverse wrap;
+}
+.form-check-label {
+  font-size: 1.5rem;
+}
+
 .dark-mode {
   background-color: black;
   color: white;
