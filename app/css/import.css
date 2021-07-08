@@ -446,7 +446,6 @@ a {
   width: 100%;
   padding: 1rem;
   margin: 0;
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,6 +473,7 @@ a {
 }
 
 .banner__title {
+  color: #fafafa;
   font-size: 6rem;
   font-family: "Courier New", Courier, monospace;
 }

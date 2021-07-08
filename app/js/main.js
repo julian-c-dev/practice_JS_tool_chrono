@@ -47,11 +47,8 @@ function chronoResume() {
 }
 function chronoReset() {
   document.getElementById("chronoTime").innerHTML = "0:00:00:000";
-  start = new Date();
+  start = 0;
   valueStartBtn.value = "Start";
-}
-function chronoStopReset() {
-  document.getElementById("chronoTime").innerHTML = "0:00:00:000";
 }
 
 function chronoStop() {
@@ -61,14 +58,31 @@ function chronoStop() {
 }
 
 // ~ Menu selections
-// ~ Pick Color
 
-let root = document.documentElement;
+const root = document.documentElement;
 const get_color = document.querySelector("input[type='color'");
+const get_size = document.querySelector("select");
 
 get_color.addEventListener("input", () => {
   const get_color_value = get_color.value;
+  console.log(get_color_value);
   root.style.setProperty("--primary", get_color_value);
+  if (get_color.value === "#ffffff") {
+    root.style.setProperty("--primary", "black");
+  }
 });
 
-// ~ Choose Size
+get_size.addEventListener("input", () => {
+  if (get_size.value === "S") {
+    screen.style.fontSize = "8rem";
+  }
+  if (get_size.value === "M") {
+    screen.style.fontSize = "10rem";
+  }
+  if (get_size.value === "L") {
+    screen.style.fontSize = "12rem";
+  }
+  if (get_size.value === "XL") {
+    screen.style.fontSize = "14rem";
+  }
+});
