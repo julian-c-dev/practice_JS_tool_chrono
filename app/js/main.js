@@ -59,3 +59,16 @@ function chronoStop() {
   clearTimeout(timerID);
   if (screen.innerHTML !== "0:00:00:000") valueStartBtn.value = "Resume";
 }
+
+// ~ Menu selections
+// ~ Pick Color
+
+let root = document.documentElement;
+const get_color = document.querySelector("input[type='color'");
+
+get_color.addEventListener("input", () => {
+  const get_color_value = get_color.value;
+  root.style.setProperty("--primary", get_color_value);
+});
+
+// ~ Choose Size
