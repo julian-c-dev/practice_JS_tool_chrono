@@ -1,15 +1,13 @@
-#main {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+// ~ Light / Dark Mode
+
+.light-mode {
+  background-color: var(--lm-background-color);
+  color: var(--lm-text-color);
 }
 
-.chrono {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+.dark-mode {
+  background-color: var(--dm-background-color);
+  color: var(--dm-text-color);
 }
 
 .form-switch {
@@ -20,11 +18,23 @@
   font-size: 1.5rem;
 }
 
-.dark-mode {
-  background-color: black;
-  color: white;
+// ~ Layout
+
+#main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-// Chrono:
+
+// ~ Chrono Tool
+
+.chrono {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 #chronoTime {
   font-size: 10rem;

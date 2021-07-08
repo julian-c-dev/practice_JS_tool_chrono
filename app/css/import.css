@@ -2,6 +2,10 @@
 /* Global variables */
 /* Color palette */
 :root {
+  --lm-background-color: #fff;
+  --lm-text-color: #000;
+  --dm-background-color: #3f3f3f;
+  --dm-text-color: #fff;
   --primary: green;
 }
 
@@ -352,7 +356,6 @@ html {
 }
 
 body {
-  background-color: #3b3b3b;
   position: relative;
   font-family: "Courier New", Courier, monospace;
 }
@@ -380,6 +383,30 @@ a {
   padding: 0;
 }
 
+.light-mode {
+  background-color: var(--lm-background-color);
+  color: var(--lm-text-color);
+}
+
+.dark-mode {
+  background-color: var(--dm-background-color);
+  color: var(--dm-text-color);
+}
+
+.form-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse wrap;
+          flex-flow: column-reverse wrap;
+}
+
+.form-check-label {
+  font-size: 1.5rem;
+}
+
 #main {
   position: fixed;
   top: 50%;
@@ -402,25 +429,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.form-switch {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-flow: column-reverse wrap;
-          flex-flow: column-reverse wrap;
-}
-
-.form-check-label {
-  font-size: 1.5rem;
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
 }
 
 #chronoTime {

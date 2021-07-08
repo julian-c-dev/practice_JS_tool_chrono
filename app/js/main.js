@@ -1,8 +1,8 @@
-// getting elements DOM
+// ~ Getting elements DOM
 let valueStartBtn = document.querySelector('input[name="start"]');
 let screen = document.getElementById("chronoTime");
 
-// Chrono Behaviour
+// ~ Chrono Behaviour
 let startTime = 0;
 let start = 0;
 let end = 0;
@@ -33,7 +33,7 @@ function chrono() {
   timerID = setTimeout("chrono()", 10);
 }
 
-// Chrono Behaviour btns
+// ~ Chrono Behaviour btns
 function chronoStart() {
   document.chronoForm.reset.onclick = chronoReset;
   start = new Date();
@@ -59,22 +59,3 @@ function chronoStop() {
   clearTimeout(timerID);
   if (screen.innerHTML !== "0:00:00:000") valueStartBtn.value = "Resume";
 }
-
-//Sidebar
-
-function openNav() {
-  document.getElementById("mySidebar").style.width = "28rem";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-}
-
-//Dark mode
-const form_switch = document.getElementsByClassName("form-check-label")[0];
-const input_switch = document.getElementById("flexSwitchCheckDefault");
-
-input_switch.addEventListener("click", () => {
-  if (input_switch.checked === false) form_switch.innerHTML = "Dark&nbsp; ";
-  if (input_switch.checked === true) form_switch.innerHTML = "Light ";
-});
