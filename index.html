@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chronometer</title>
     <link rel="stylesheet" href="/app/css/import.css" />
+    <script
+      src="https://kit.fontawesome.com/804d1be908.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,9 +19,13 @@
   </head>
   <body>
     <header class="banner">
-      <button class="openbtn" onclick="openNav()">☰</button>
-      <h1 class="title">Chronometer</h1>
-      <div class="form-check form-switch">
+      <button class="banner__icon" onclick="openNav()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <h1 class="banner__title">
+        Chronometer <i class="fas fa-stopwatch-20"></i>
+      </h1>
+      <div class="form-check form-switch banner__switch">
         <label class="form-check-label" for="flexSwitchCheckDefault"
           >Dark&nbsp;
         </label>
@@ -27,27 +35,75 @@
           id="flexSwitchCheckDefault"
         />
       </div>
+      
     </header>
+    <div class="credit__side" orientation="rigth">
+      <ul>
+        <li>
+          <a
+            class="credit__elements"
+            href="https://github.com/julian-c-dev/web_project--Productivity_wallpapers"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-github"
+            >
+              <title>GitHub</title>
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="mailto credit__elements"
+            href="mailto:julian.c.dev@gmail.com"
+            >julian.c.dev@gmail.com</a
+          >
+        </li>
+        <li>
+          <span class="mailto credit__elements credit__year">2021</span>
+        </li>
+      </ul>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+  
+    </div>
     <div id="main">
       <div class="chrono">
         <div id="chronoTime">0:00:00:000</div>
         <form name="chronoForm">
           <input
-            class="btn btn-light btn-lg"
+            class="btns"
             type="button"
             name="start"
             value="Start"
             onClick="chronoStart()"
           />
           <input
-            class="btn btn-light btn-lg"
+            class="btns"
             type="button"
             name="stop"
             value="Stop"
             onClick="chronoStop()"
           />
           <input
-            class="btn btn-light btn-lg"
+            class="btns"
             type="button"
             name="reset"
             value="Reset"
@@ -55,14 +111,8 @@
           />
         </form>
       </div>
-    </div>
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>
+
+    
 
     <script src="/app/js/main.js"></script>
   </body>

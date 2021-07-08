@@ -32,12 +32,14 @@ function chrono() {
     hr + ":" + min + ":" + sec + ":" + msec;
   timerID = setTimeout("chrono()", 10);
 }
+
+// Chrono Behaviour btns
 function chronoStart() {
   document.chronoForm.reset.onclick = chronoReset;
   start = new Date();
   chrono();
 }
-function chronoContinue() {
+function chronoResume() {
   document.chronoForm.reset.onclick = chronoReset;
   start = new Date() - diff;
   start = new Date(start);
@@ -53,7 +55,7 @@ function chronoStopReset() {
 }
 
 function chronoStop() {
-  document.chronoForm.start.onclick = chronoContinue;
+  document.chronoForm.start.onclick = chronoResume;
   clearTimeout(timerID);
   if (screen.innerHTML !== "0:00:00:000") valueStartBtn.value = "Resume";
 }

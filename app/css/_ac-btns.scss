@@ -1,0 +1,9 @@
+.btns {
+  padding: 1rem;
+  width: 12rem;
+  border-radius: 25px;
+  border: 4px solid gray;
+  &:hover {
+    border: 4px solid var(--primary);
+  }
+}

@@ -1,33 +1,10 @@
-/*Elements*/
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* typography*/
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background-color: #3b3b3b;
-  position: relative;
-  font-family: "Courier New", Courier, monospace;
-}
-
-form {
-  font-size: 2rem;
-}
-
-h1 {
-  margin: 0;
-}
-
 /* @fontface */
 /* Global variables */
 /* Color palette */
+:root {
+  --primary: green;
+}
+
 /* Mixins*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -360,6 +337,42 @@ template {
   display: none;
 }
 
+/*Elements*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* typography*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #3b3b3b;
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+}
+
+form {
+  font-size: 2rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 0;
+  margin: 0;
+}
+
 #main {
   position: fixed;
   top: 50%;
@@ -406,19 +419,14 @@ template {
 #chronoTime {
   font-size: 10rem;
   padding: 1rem;
-  color: #008807;
+  color: var(--primary);
   text-align: center;
-}
-
-.btn {
-  margin: 1rem;
-  font-family: "Courier New", Courier, monospace;
 }
 
 .banner {
   width: auto;
   text-align: center;
-  background-color: rgba(35, 53, 84, 0.8);
+  background-color: var(--primary);
   background-size: cover;
   width: 100%;
   padding: 1rem;
@@ -436,11 +444,19 @@ template {
   font-family: "Courier New", Courier, monospace;
 }
 
-.openbtn {
+.banner__icon {
+  background-color: white;
   border-radius: 50%;
+  border: none;
+  margin: 0 0 1rem 1.5rem;
+  padding: 1.7rem;
 }
 
-.title {
+.banner__icon .fas {
+  font-size: large;
+}
+
+.banner__title {
   font-size: 6rem;
   font-family: "Courier New", Courier, monospace;
 }
@@ -515,5 +531,59 @@ body {
   .sidebar a {
     font-size: 18px;
   }
+}
+
+.btns {
+  padding: 1rem;
+  width: 12rem;
+  border-radius: 25px;
+  border: 4px solid gray;
+}
+
+.btns:hover {
+  border: 4px solid var(--primary);
+}
+
+.credit__side {
+  width: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.credit__elements {
+  padding: 0.8rem 0;
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--primary);
+}
+
+.mailto {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.mailto:link {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.credit__year {
+  padding: 0;
 }
 /*# sourceMappingURL=import.css.map */

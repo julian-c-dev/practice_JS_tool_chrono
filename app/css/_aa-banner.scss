@@ -1,7 +1,7 @@
 .banner {
   width: auto;
   text-align: center;
-  background-color: rgba($color: #233554, $alpha: 0.8);
+  background-color: var(--primary);
   background-size: cover;
   width: 100%;
   padding: 1rem;
@@ -13,11 +13,18 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-.openbtn {
+.banner__icon {
+  background-color: white;
   border-radius: 50%;
+  border: none;
+  margin: 0 0 1rem 1.5rem;
+  padding: 1.7rem;
+  & .fas {
+    font-size: large;
+  }
 }
 
-.title {
+.banner__title {
   font-size: 6rem;
   font-family: "Courier New", Courier, monospace;
 }

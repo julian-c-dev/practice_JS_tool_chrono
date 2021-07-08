@@ -1,0 +1,30 @@
+.credit__side {
+  width: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.credit__elements {
+  padding: 0.8rem 0;
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--primary);
+}
+
+.mailto {
+  writing-mode: vertical-lr;
+  &:link {
+    text-decoration: none;
+    color: var(--primary);
+  }
+}
+
+.credit__year {
+  padding: 0;
+}

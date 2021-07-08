@@ -29,11 +29,6 @@
 #chronoTime {
   font-size: 10rem;
   padding: 1rem;
-  color: rgb(0, 136, 7);
+  color: var(--primary);
   text-align: center;
-}
-
-.btn {
-  margin: 1rem;
-  font-family: "Courier New", Courier, monospace;
 }
