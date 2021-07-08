@@ -19,8 +19,10 @@
   border: none;
   margin: 0 0 1rem 1.5rem;
   padding: 1.7rem;
+  cursor: pointer;
   & .fas {
     font-size: large;
+    color: var(--primary);
   }
 }
 

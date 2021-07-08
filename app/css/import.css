@@ -343,6 +343,7 @@ template {
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  white-space: nowrap;
 }
 
 /* typography*/
@@ -366,11 +367,17 @@ h1 {
 
 ul {
   list-style-type: none;
+  margin-left: 0;
 }
 
 ul li {
   padding: 0;
   margin: 0;
+}
+
+a {
+  margin-left: 0;
+  padding: 0;
 }
 
 #main {
@@ -450,10 +457,12 @@ ul li {
   border: none;
   margin: 0 0 1rem 1.5rem;
   padding: 1.7rem;
+  cursor: pointer;
 }
 
 .banner__icon .fas {
   font-size: large;
+  color: var(--primary);
 }
 
 .banner__title {
@@ -483,35 +492,33 @@ body {
   padding-top: 60px;
 }
 
-.sidebar a {
-  padding: 8px 8px 8px 32px;
+.sidebar h2 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.sidebar a,
+.sidebar label {
+  padding: 0.8rem;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: grey;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.sidebar a:hover {
+.sidebar a:hover,
+.sidebar label:hover {
   color: #f1f1f1;
 }
 
 .sidebar .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
+  right: 2.5rem;
+  font-size: 3.6rem;
+  margin-left: 5rem;
 }
 
 .openbtn:hover {
@@ -519,18 +526,31 @@ body {
 }
 
 #main {
-  -webkit-transition: margin-left 0.5s;
-  transition: margin-left 0.5s;
+  -webkit-transition: margin-left 0.01s;
+  transition: margin-left 0.01s;
   padding: 16px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 45rem) {
   .sidebar {
-    padding-top: 15px;
+    padding-top: 1.5rem;
   }
   .sidebar a {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2rem;
 }
 
 .btns {

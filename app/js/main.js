@@ -63,7 +63,7 @@ function chronoStop() {
 //Sidebar
 
 function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("mySidebar").style.width = "28rem";
 }
 
 function closeNav() {

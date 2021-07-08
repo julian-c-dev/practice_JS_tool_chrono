@@ -18,6 +18,7 @@
     />
   </head>
   <body>
+    <!-- ~ Header: Banner -->
     <header class="banner">
       <button class="banner__icon" onclick="openNav()">
         <i class="fas fa-bars"></i>
@@ -35,9 +36,10 @@
           id="flexSwitchCheckDefault"
         />
       </div>
-      
     </header>
-    <div class="credit__side" orientation="rigth">
+
+    <!-- ~ Footer: Credit Left Side -->
+    <footer class="credit__side" orientation="rigth">
       <ul>
         <li>
           <a
@@ -75,16 +77,34 @@
           <span class="mailto credit__elements credit__year">2021</span>
         </li>
       </ul>
+      <!-- ~ Menu Right Side Bar (HIDDEN)-->
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <form>
+          <ul>
+            <li><h2>Options</h2></li>
+            <li class="flex-row">
+              <label for="menu__color">Primary Color&nbsp;</label>
+              <input type="color" name="menu__color" id="menu__color" />
+            </li>
+            <li class="flex-row">
+              <label for="menu__range">Chrono Size&nbsp;</label>
+              <select name="menu__range" id="menu__range">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L" selected>L</option>
+                <option value="XL">XL</option>
+              </select>
+            </li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </form>
       </div>
-  
-    </div>
-    <div id="main">
+    </footer>
+
+    <!-- ~ MAIN: Chrono Tool-->
+    <main id="main">
       <div class="chrono">
         <div id="chronoTime">0:00:00:000</div>
         <form name="chronoForm">
@@ -111,8 +131,7 @@
           />
         </form>
       </div>
-
-    
+    </main>
 
     <script src="/app/js/main.js"></script>
   </body>

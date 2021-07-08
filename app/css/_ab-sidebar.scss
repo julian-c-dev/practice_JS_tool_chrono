@@ -15,34 +15,32 @@ body {
   padding-top: 60px;
 }
 
-.sidebar a {
-  padding: 8px 8px 8px 32px;
+.sidebar h2 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.sidebar a,
+.sidebar label {
+  padding: 0.8rem;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: grey;
   display: block;
   transition: 0.3s;
 }
 
-.sidebar a:hover {
+.sidebar a:hover,
+.sidebar label:hover {
   color: #f1f1f1;
 }
 
 .sidebar .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
+  right: 2.5rem;
+  font-size: 3.6rem;
+  margin-left: 5rem;
 }
 
 .openbtn:hover {
@@ -50,15 +48,22 @@ body {
 }
 
 #main {
-  transition: margin-left 0.5s;
+  transition: margin-left 0.01s;
   padding: 16px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 45rem) {
   .sidebar {
-    padding-top: 15px;
+    padding-top: 1.5rem;
   }
   .sidebar a {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
 }
