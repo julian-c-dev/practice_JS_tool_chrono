@@ -46,8 +46,14 @@ function chronoResume() {
   chrono();
 }
 function chronoReset() {
-  document.getElementById("chronoTime").innerHTML = "0:00:00:000";
+  startTime = 0;
   start = 0;
+  end = 0;
+  diff = 0;
+  timerID = 0;
+  document.chronoForm.reset.onclick = chronoReset;
+  start = new Date();
+  document.getElementById("chronoTime").innerHTML = "0:00:00:000";
   valueStartBtn.value = "Start";
 }
 
