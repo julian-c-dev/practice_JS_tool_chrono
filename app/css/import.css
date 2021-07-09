@@ -486,6 +486,7 @@ a {
 .form-check-label,
 .form-check-input {
   cursor: pointer;
+  font-weight: bolder;
 }
 
 body {
@@ -645,7 +646,8 @@ body {
 
 @media screen and (max-width: 530px) {
   .banner__title {
-    font-size: 3.5rem;
+    padding-top: 1.5rem;
+    font-size: 4rem;
   }
   .mailto {
     padding: 0 0.5rem;
@@ -680,7 +682,7 @@ body {
   }
   .btns {
     padding: 0.5rem;
-    width: 8rem;
+    width: 9rem;
     border-radius: 2.5rem;
   }
 }

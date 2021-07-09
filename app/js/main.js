@@ -1,6 +1,10 @@
 // ~ Getting elements DOM
-let valueStartBtn = document.querySelector('input[name="start"]');
-let screen = document.getElementById("chronoTime");
+const valueStartBtn = document.querySelector('input[name="start"]');
+const screenChrono = document.getElementById("chronoTime");
+const root = document.documentElement;
+const get_color = document.querySelector("input[type='color'");
+const get_size = document.querySelector("select");
+const get_contact = document.getElementById("contactMenu");
 
 // ~ Chrono Behaviour
 let startTime = 0;
@@ -33,7 +37,6 @@ function chrono() {
   timerID = setTimeout("chrono()", 10);
 }
 
-// ~ Chrono Behaviour btns
 function chronoStart() {
   document.chronoForm.reset.onclick = chronoReset;
   start = new Date();
@@ -60,35 +63,5 @@ function chronoReset() {
 function chronoStop() {
   document.chronoForm.start.onclick = chronoResume;
   clearTimeout(timerID);
-  if (screen.innerHTML !== "0:00:00:000") valueStartBtn.value = "Resume";
+  if (screenChrono.innerHTML !== "0:00:00:000") valueStartBtn.value = "Resume";
 }
-
-// ~ Menu selections
-
-const root = document.documentElement;
-const get_color = document.querySelector("input[type='color'");
-const get_size = document.querySelector("select");
-
-get_color.addEventListener("input", () => {
-  const get_color_value = get_color.value;
-  console.log(get_color_value);
-  root.style.setProperty("--primary", get_color_value);
-  if (get_color.value === "#ffffff") {
-    root.style.setProperty("--primary", "black");
-  }
-});
-
-get_size.addEventListener("input", () => {
-  if (get_size.value === "S") {
-    screen.style.fontSize = "8rem";
-  }
-  if (get_size.value === "M") {
-    screen.style.fontSize = "10rem";
-  }
-  if (get_size.value === "L") {
-    screen.style.fontSize = "12rem";
-  }
-  if (get_size.value === "XL") {
-    screen.style.fontSize = "14rem";
-  }
-});

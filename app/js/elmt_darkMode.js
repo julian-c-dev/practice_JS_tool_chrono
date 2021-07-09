@@ -1,4 +1,5 @@
 // ~ Dark/Light mode
+
 const get_body = document.querySelector("body");
 const form_switch = document.getElementsByClassName("form-check-label")[0];
 const input_switch = document.getElementById("flexSwitchCheckDefault");
