@@ -1,0 +1,59 @@
+// banner
+@media screen and(max-width:768px ) {
+  .banner__icon {
+    display: none;
+  }
+  .form-check,
+  .form-check-label,
+  .form-check-input {
+    display: none;
+  }
+  .banner__title {
+    font-size: 5rem;
+    justify-content: center;
+  }
+  .banner {
+    display: block;
+    padding: 1.5rem 0;
+  }
+}
+
+// credit
+@media screen and(max-width:530px ) {
+  .banner__title {
+    font-size: 3.5rem;
+  }
+  .mailto {
+    padding: 0 0.5rem;
+    writing-mode: horizontal-tb;
+  }
+  .credit__side {
+    bottom: 1rem;
+    right: 50vw;
+    ul {
+      display: flex;
+      flex-flow: row-reverse;
+      align-items: center;
+    }
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and(max-width:530px ) {
+  #chronoTime {
+    font-size: 6rem;
+  }
+  .btns {
+    padding: 0.5rem;
+    width: 8rem;
+    border-radius: 2.5rem;
+  }
+}
+
+@media screen and(max-width:323px ) {
+  body {
+    min-width: 323px;
+  }
+}

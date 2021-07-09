@@ -1,5 +1,5 @@
 .banner {
-  width: auto;
+  width: 100%;
   text-align: center;
   background-color: var(--primary);
   background-size: cover;
@@ -31,7 +31,7 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-.form-switch {
+.banner__switch {
   font-size: large;
   cursor: pointer;
 }
