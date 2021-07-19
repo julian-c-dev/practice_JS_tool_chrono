@@ -1,5 +1,5 @@
 // banner
-@media screen and(max-width:768px ) {
+@media screen and(max-width:999px ) {
   .banner__icon {
     display: none;
   }
@@ -9,12 +9,12 @@
     display: none;
   }
   .banner__title {
-    font-size: 5rem;
+    font-size: 50px;
     justify-content: center;
   }
   .banner {
     display: block;
-    padding: 1.5rem 0;
+    padding: 15px 0 0 0;
   }
 }
 
@@ -44,12 +44,12 @@
 
 @media screen and(max-width:530px ) {
   #chronoTime {
-    font-size: 6rem;
+    font-size: 60px;
   }
   .btns {
-    padding: 0.5rem;
-    width: 9rem;
-    border-radius: 2.5rem;
+    padding: 5px;
+    width: 90px;
+    border-radius: 250px;
   }
 }
 

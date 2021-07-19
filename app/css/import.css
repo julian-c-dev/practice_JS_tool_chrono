@@ -508,13 +508,13 @@ body {
 }
 
 .sidebar h2 {
-  font-size: 3.5rem;
+  font-size: 35px;
   color: white;
 }
 
 .sidebar a,
 .sidebar label {
-  padding: 0.8rem;
+  padding: 8px;
   text-decoration: none;
   font-size: 25px;
   color: grey;
@@ -532,9 +532,9 @@ body {
 .sidebar .closebtn {
   position: absolute;
   top: 0;
-  right: 2.5rem;
-  font-size: 3.6rem;
-  margin-left: 5rem;
+  right: 250px;
+  font-size: 360px;
+  margin-left: 5px;
 }
 
 .openbtn:hover {
@@ -547,12 +547,12 @@ body {
   padding: 16px;
 }
 
-@media screen and (max-height: 45rem) {
+@media screen and (max-height: 450px) {
   .sidebar {
-    padding-top: 1.5rem;
+    padding-top: 150px;
   }
   .sidebar a {
-    font-size: 1.8rem;
+    font-size: 180px;
   }
 }
 
@@ -623,7 +623,7 @@ body {
   padding: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
   .banner__icon {
     display: none;
   }
@@ -633,14 +633,14 @@ body {
     display: none;
   }
   .banner__title {
-    font-size: 5rem;
+    font-size: 50px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .banner {
     display: block;
-    padding: 1.5rem 0;
+    padding: 15px 0 0 0;
   }
 }
 
@@ -678,12 +678,12 @@ body {
 
 @media screen and (max-width: 530px) {
   #chronoTime {
-    font-size: 6rem;
+    font-size: 60px;
   }
   .btns {
-    padding: 0.5rem;
-    width: 9rem;
-    border-radius: 2.5rem;
+    padding: 5px;
+    width: 90px;
+    border-radius: 250px;
   }
 }
 
